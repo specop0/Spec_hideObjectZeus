@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ID="Arma3">
+    <Package ID="Spec_hideObjectZeus">
+        <Container ID="General">
+            <Key ID="STR_Spec_hideObjectZeus_moduleName">
+                <Original>Hide Terrain Objects</Original>
+                <English>Hide Terrain Objects</English>
+                <German>Verstecke Terrain Objekte</German>
+            </Key>
+            <Key ID="STR_Spec_hideObjectZeus_showOrHideQuestion">
+                <Original>Show or Hide Objects?</Original>
+                <English>Show or Hide Objects?</English>
+                <German>Verstecke Terrain Objekte?</German>
+            </Key>
+            <Key ID="STR_Spec_hideObjectZeus_showOrHideQuestion_hide">
+                <Original>Hide</Original>
+                <English>Hide</English>
+                <German>Verstecke</German>
+            </Key>
+            <Key ID="STR_Spec_hideObjectZeus_showOrHideQuestion_show">
+                <Original>Show</Original>
+                <English>Show</English>
+                <German>Zeige</German>
+            </Key>
+            <Key ID="STR_Spec_hideObjectZeus_objectTypeQuestion">
+                <Original>Objects</Original>
+                <English>Objects</English>
+                <German>Objekte</German>
+            </Key>
+            <Key ID="STR_Spec_hideObjectZeus_objectTypeQuestion_buildings">
+                <Original>Buildings</Original>
+                <English>Buildings</English>
+                <German>Gebäude</German>
+            </Key>
+            <Key ID="STR_Spec_hideObjectZeus_objectTypeQuestion_wallsAndFences">
+                <Original>Walls &amp; Fences</Original>
+                <English>Walls &amp; Fences</English>
+                <German>Wände &amp; Zäune</German>
+            </Key>
+            <Key ID="STR_Spec_hideObjectZeus_objectTypeQuestion_vegetation">
+                <Original>Vegetation</Original>
+                <English>Vegetation</English>
+                <German>Vegetation</German>
+            </Key>
+            <Key ID="STR_Spec_hideObjectZeus_objectTypeQuestion_everything">
+                <Original>Everything</Original>
+                <English>Everything</English>
+                <German>Alles</German>
+            </Key>
+            <Key ID="STR_Spec_hideObjectZeus_radius">
+                <Original>Radius [m]</Original>
+                <English>Radius [m]</English>
+                <German>Radius [m]</German>
+            </Key>
+        </Container>
+    </Package>
+</Project>
