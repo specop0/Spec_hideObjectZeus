@@ -46,6 +46,6 @@ switch (_objectTypeValue) do {
 };
 
 // hide object must be called on server
-[_position, _types, _radius, _hide] remoteExec ["Spec_hideObjectZeus_fnc_showHideTerrainObjects_server"];
+[_position, _types, _radius, _hide] remoteExec ["Spec_hideObjectZeus_fnc_showHideTerrainObjects_server", 2];
 
 true
