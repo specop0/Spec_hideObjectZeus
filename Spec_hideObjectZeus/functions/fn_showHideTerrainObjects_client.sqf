@@ -26,26 +26,28 @@ private _dialogResult =
     ]
 ] call Ares_fnc_ShowChooseDialog;
 
-if (_dialogResult isEqualTo []) exitWith {};
+if !(_dialogResult isEqualTo []) then {
+    // parse result
+    _dialogResult params ["_hideOrShowValue", "_objectTypeValue", "_radiusString"];
+    private _hide = _hideOrShowValue isEqualTo 0;
+    private _radius = parseNumber _radiusString;
+    private _types = ["House"];
+    switch (_objectTypeValue) do {
+        case 1 : {
+            _types = ["Wall", "Fence"];
+        };
+        case 2 : {
+            _types = ["Tree", "Bush", "Rock", "Hide"];
+        };
+        case 3 : {
+            _types = [];
+        };
+    };
 
-// parse result
-_dialogResult params ["_hideOrShowValue", "_objectTypeValue", "_radiusString"];
-private _hide = _hideOrShowValue isEqualTo 0;
-private _radius = parseNumber _radiusString;
-private _types = ["House"];
-switch (_objectTypeValue) do {
-    case 1 : {
-        _types = ["Wall", "Fence"];
-    };
-    case 2 : {
-        _types = ["Tree", "Bush", "Rock", "Hide"];
-    };
-    case 3 : {
-        _types = [];
-    };
+    // hide object must be called on server
+    [_position, _types, _radius, _hide] remoteExec ["Spec_hideObjectZeus_fnc_showHideTerrainObjects_server", 2];
 };
 
-// hide object must be called on server
-[_position, _types, _radius, _hide] remoteExec ["Spec_hideObjectZeus_fnc_showHideTerrainObjects_server", 2];
+deleteVehicle _logic;
 
 true

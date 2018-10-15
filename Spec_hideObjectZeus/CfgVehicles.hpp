@@ -15,10 +15,10 @@ class CfgVehicles {
 
         displayName = $STR_Spec_hideObjectZeus_moduleName;
 
-        function = "Spec_hideObjectZeus_fnc_showHideTerrainObjects";
+        function = "Spec_hideObjectZeus_fnc_showHideTerrainObjects_module";
         functionPriority = 1;
 
-        isGlobal = 2
+        isGlobal = 0;
         isTriggerActivated = 0;
         isDisposable = 0;
     };
